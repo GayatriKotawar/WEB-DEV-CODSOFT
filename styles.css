@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+header {
+    background: linear-gradient(to right, #dc6cfb, #6ab6d6);
+    color: #f7b6b6;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero {
+    max-width: 800px;
+    margin: auto;
+}
+
+header nav ul {
+
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    background-color: #ca76e2;
+
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav a {
+    color: #fabcbc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    background-color: #ddfafa;
+
+    padding: 20px;
+    margin: 10px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background: #fefdfd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #ff7e5f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #feb47b;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}

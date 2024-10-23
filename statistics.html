@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics Chart Example</title>
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>HERE'S TO MORE PRODUCTIVE LIFESTYLE </h1>
+    <h2>YOUR TASK:FARMING</h2>
+    <h3>WEEKLY REPORT</h3>
+    <h4> 21-09-2024</h4>
+    <!-- Create a canvas element for the chart -->
+    <canvas id="myChart" width="400" height="200"></canvas>
+
+    <script>
+        // JavaScript code to add data and configure the chart
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',  // You can change to 'line', 'pie', 'doughnut', etc.
+            data: {
+                labels: ['sunday', 'Monday', 'tuesday', 'Wednesday', 'Thursday','Friday','Saturday'], // X-axis labels
+                datasets: [{
+                    label: 'Productivity',   // Name of the dataset
+                    data: [50,80,70,90,60,100,65 ],  // Y-axis data points
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                        
+                    ],
+                    borderWidth: 1  // Border thickness of the bars
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true   // Ensure the Y-axis starts from 0
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
